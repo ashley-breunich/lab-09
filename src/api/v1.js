@@ -59,10 +59,13 @@ router.patch('/api/v1/:model/:id', (request,response,next) => {
     .catch(next);
 });
 
-router.delete('/api/v1/:model/:id', (request,response,next) => {
+router.delete('/api/v1/:model/:id', (request,response) => {
   request.model.delete(request.params.id)
-    .then(result => sendJSON(result, response))
-    .catch(next);
+    .then(() => {
+      response.statusCode = 200;
+      response.end();
+    })
+    .catch(console.error);
 });
 
 export default router;
