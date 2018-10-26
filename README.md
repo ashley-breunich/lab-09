@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/ashley-breunich/lab-09.svg?branch=master)](https://www.travis-ci.com/ashley-breunich/lab-09)
+
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB - Dynamic API Routing
 =================================================
 
@@ -24,6 +26,7 @@ Continue working with the REST Server that you created in the previous lab.  We'
 
 
 ##  Documentation
-Include your travis badge at the top of your `README.md` file
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
+I am still finishing up this lab and will complete the README once I am done.
+
+I do want to note that I rewatched the video from lecture and followed along to get the write and read functions and the model finder working. I will write in recaps of what each function is doing once I resubmit. Just wanted to submit what I had before the deadline tonight. 
 
