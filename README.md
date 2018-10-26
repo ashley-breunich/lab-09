@@ -30,3 +30,5 @@ I am still finishing up this lab and will complete the README once I am done.
 
 I do want to note that I rewatched the video from lecture and followed along to get the write and read functions and the model finder working. I will write in recaps of what each function is doing once I resubmit. Just wanted to submit what I had before the deadline tonight. 
 
+Hai helped me figure out why my delete function was throwing an error. 
+
