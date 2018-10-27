@@ -23,7 +23,21 @@ router.param('model', modelFinder);
 //   console.log('You want to use', req.params.model);
 // });
 
+// router.get('/*', (request,response,next) => {
+//   console.log(request);
+//   request.model.find()
+//     .then(data => {
+//       const output = {
+//         count: data.length,
+//         results: data,
+//       };
+//       sendJSON(output, response);
+//     })
+//     .catch(next);
+// });
+
 router.get('/api/v1/:model', (request,response,next) => {
+  // console.log(request);
   request.model.find()
     .then(data => {
       const output = {

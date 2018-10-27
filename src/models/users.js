@@ -19,6 +19,7 @@ class Users {
   }
 
   static find(query) {
+    console.log('users find');
     return storage.find(query);
   }
 
