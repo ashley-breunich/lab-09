@@ -10,6 +10,7 @@ class Notes {
   }
 
   static find(query) {
+    console.log('notes find');
     return storage.find(query);
   }
 

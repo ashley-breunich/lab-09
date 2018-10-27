@@ -58,5 +58,4 @@ storage.saveDatabase = () => {
     .then(result => true)
     .catch(error => error);
 };
-
 export default storage;
