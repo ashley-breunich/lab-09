@@ -67,7 +67,7 @@ describe('api server', () => {
       .send(obj)
       .then(results => {
         expect(results.status).toBe(200);
-        expect(results.body.title).toEqual(obj.title);
+        expect(results.body.firstname).toEqual(obj.firstname);
       })
       .catch(err => {
         expect(err).not.toBeDefined();
@@ -93,11 +93,32 @@ describe('api server', () => {
   it('should respond be able to put to /api/v1/users', () => {
 
     let userUrl = '/api/v1/users/1';
+    let obj = {firstname:'James',lastname:'Breunich',email:'jamesbreunich@gmail.com',role:'admin', _id:1};
 
     return mockRequest
       .put(userUrl)
+      .send(obj)
       .then(results => {
         expect(results.status).toBe(200);
+        expect(results.body.firstname).toEqual('James');
+      })
+      .catch(err => {
+        console.error(err);
+        expect(err).not.toBeDefined();
+      });
+  });
+
+  it('should respond be able to put to /api/v1/notes', () => {
+
+    let userUrl = '/api/v1/notes/3';
+    let obj = {title:'solution',text:'foo', _id:3};
+
+    return mockRequest
+      .put(userUrl)
+      .send(obj)
+      .then(results => {
+        expect(results.status).toBe(200);
+        expect(results.body.title).toEqual('solution');
       })
       .catch(err => {
         console.error(err);
