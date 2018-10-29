@@ -23,7 +23,6 @@ app.use(express.urlencoded({extended:true}));
 // Routes
 app.use(apiRouter);
 
-
 // Catchalls
 app.use(notFound);
 app.use(errorHandler);
